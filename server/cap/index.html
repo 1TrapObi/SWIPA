@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Recaptcha token</title>
+  </head>
+  <body>
+    <button id="launch-login">Add Google Account</button>&nbsp; (<b id="account-count">0 </b> Accounts) <br><br>
+    <button id="get-v3-token">Get V3 Token</button><br><br>
+    <button id="get-v2-token">Get V2 Token</button>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

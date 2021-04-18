@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>Recaptcha V3</title>
+    <script src="https://www.google.com/recaptcha/api.js?render={{SITEKEY}}"></script>
+
+</head>
+
+<body>
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('{{SITEKEY}}', {
+            action: '{{ACTION}}'
+        }).then(function (token) {
+            mainConsole(token, true)
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    right: 10px;
+    position: absolute;
+    top:5px;
+}
+
+#title-bar-btns i {
+    padding: 6px;
+    background: transparent;
+    width: 25px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.task-submenu{position: relative;}

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Recaptcha V3</title>
+    <script src="https://www.google.com/recaptcha/api.js?render={{SITEKEY}}"></script>
+
+</head>
+
+<body>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{SITEKEY}}', {
+                action: '{{ACTION}}'
+            }).then(function(token) {
+                fetch('https://recaptcha-demo.appspot.com/recaptcha-v3-verify.php?action=examples/v3scores&token=' + token).then(function(response) {
+                    response.json().then(function(data) {
+                        //data.token = token;
+                        mainConsole(data, true)
+                    });
+                    //console.log(dto);
+
+                });
+                //console.log(token);
+                mainConsole(token, false)
+
+            });
+        });
+    </script>
+</body>
+
+</html>

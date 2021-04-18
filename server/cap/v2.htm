@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>reCAPTCHA demo: Explicit render after an onload callback</title>
+    <script type="text/javascript">
+        var sent = false;
+        var verifyCallback = function (response) {
+            mainConsole(response, true);
+            sent = true;
+        };
+
+        var onloadCallback = function () {
+            grecaptcha.render('html_element', {
+                'sitekey': '{{SITEKEY}}',
+                'callback': verifyCallback
+            });
+            setTimeout(function () {
+                frames[0].document.getElementById('rc-anchor-container').click();
+                setTimeout(function () {
+                    if (!sent) {
+                        mainConsole("OneClick Captcha Not Available", false);
+                    }
+                }, 2000);
+            }, 2000);
+
+
+        };
+    </script>
+</head>
+
+<body>
+<form action="?" method="POST">
+    <div id="html_element"></div>
+</form>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+</script>
+</body>
+
+</html>

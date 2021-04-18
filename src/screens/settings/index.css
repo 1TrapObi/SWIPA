@@ -1,0 +1,113 @@
+.settings-main-container {
+    border-radius: 5px;
+    overflow-y: auto;
+    margin-top: 20px !important;
+    /*background: #211414;*/
+    position: relative !important;
+    /*background-image: url("../../images/logo/background.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: 0% 100%;*/
+    /*background-size: 100% 22%;*/
+
+}
+
+.settings-main-container .col {
+    border-radius: 10px;
+    padding: 20px;
+    /*background: #2F2323;*/
+    margin: 20px;
+    text-align: center;
+    display: grid;
+
+}
+
+.settings-main-container .col div{
+    display: grid;
+}
+
+.settings-main-container .col div ul li{
+    margin-top: 10px;
+}
+
+.settings-main-container ul .yt-btn .default-btn:hover{
+    border:2px solid #FE515B;
+    background: #FE515B;
+}
+
+.settings-main-container ul .open-solver-btn .default-btn:hover,.proxy-main-container ul .clear-cc-btn .default-btn:hover  {
+    border:2px solid #CA7653;
+    background: #CA7653;
+}
+
+.settings-main-container .captcha-name{
+    text-align: left !important;
+    /*color: #E0B9A7;*/
+}
+
+
+.setting-panel{
+    /*margin-top: -45px;*/
+    height: 50px;
+    /* line-height: 50; */
+    /*background-color: #362B2B;*/
+    position: relative;
+}
+
+.settings-plus{
+    /*background: #403535;*/
+    display: inline !important;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    height: 50px;
+    width: 100px;
+}
+.setting-plus,.setting-minus{
+    color: #FFF;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.setting-plus{
+    margin-right: 5px;
+}
+.setting-minus{
+    margin-right: 30px;
+}
+
+
+.setting-footer {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+.setting-footer-text {
+    /*position: absolute;*/
+    /*bottom:96px;*/
+    margin-left: 20px;
+}
+.counter-value{
+    text-align: left;
+    padding-left: 20px;
+    line-height: 50px;
+}
+.hover-btn{
+    cursor: pointer !important;
+}
+
+.settings-input{
+    border: 1px solid #594F4F !important;
+    height: 50px;
+    width: 100%;
+    background: #231717;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #878080 !important;
+    margin: 0 auto;
+}
+
+.settings-plus.settings-plus-minus-bg-color  .settings-plus-minus-bg-color { background: #896ff6!important;}

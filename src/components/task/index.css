@@ -1,0 +1,59 @@
+.task-submenu {
+    line-height: 30px;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.task-submenu span {
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #E0B9A7;
+}
+
+.task-manger-btns {
+   /* position: absolute;
+    right: 25px;
+    */
+}
+
+.task-manger-btns ul {
+    display: flex; margin: 0;
+}
+
+.task-manger-btns ul li {
+    margin-left:10px;
+}
+
+.task-manger-btns button { background: #896ff6 !important;}
+
+.task-manger-btns ul .create-btn .default-btn:hover{
+    border:2px solid #DBDBDB;
+    background: #DBDBDB;
+}
+
+.task-manger-btns ul .start-btn .default-btn:hover{
+    border:2px solid #CEB6AC;
+    background: #CEB6AC;
+}
+
+.task-manger-btns ul .edit-btn .default-btn:hover{
+    border:2px solid #CA9B87;
+    background: #CA9B87;
+}
+
+.task-manger-btns ul .stop-btn .default-btn:hover{
+    border:2px solid #CC8366;
+    background: #CC8366;
+}
+
+.task-manger-btns ul .delete-btn .default-btn:hover{
+    border:2px solid #CA7653;
+    background: #CA7653;
+}
+
+.bulk-action {display: flex;justify-content: flex-end; align-items: center; }
+.bulk-action div {background: #363642; display: flex; align-items: center; padding: 2px 10px; border-radius: 6px;}
+.bulk-action p {margin: 0 10px 0 0; font-size: 14px;}
+.bulk-action button {background: transparent; border: 0; color: #f18c16;}
